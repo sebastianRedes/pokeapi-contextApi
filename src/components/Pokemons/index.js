@@ -12,9 +12,7 @@ const Pokemonss = () => {
       <Fragment>
          {
            doneFetch ?  
-           (pokemons.length ? <Pokemons pokemons={pokemons} />:<h2>wefwe</h2>)
-           :
-          <ProgressBar/>
+           (<ProgressBar/>):(<Pokemons pokemons={pokemons} />)
          }
       </Fragment>  
       </>
